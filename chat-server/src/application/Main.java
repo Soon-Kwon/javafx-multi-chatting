@@ -67,7 +67,7 @@ public class Main extends Application {
 	// 서버의 작동을 중지시키는 메소드
 	public void stopServer() {
 		try {
-			// 현재 작동 죽인 모든 소켓 닫기
+			// 현재 작동 중인 모든 소켓 닫기
 			Iterator<Client> iterator = clients.iterator();
 			while(iterator.hasNext()) {
 				Client client = iterator.next();
